@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendering</title>
+    <link rel="stylesheet" href="../CSS/global.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+    <main>
+      <h1 class="main-title">Rendering</h1>
+      <section>
+        <h1>What is SEO</h1>
+        <h2>
+          SEO stands for search engine optimization. The basic moral of using
+          SEO is that Google's crawler bots can interact with our website with
+          the greatest ease, and then this crawler bot helps our website be
+          shown more frequently and on the first page of Google when
+          searched.<br />
+          Basically, maintaining friendly SEO is a technique used to boost the
+          quality and quantity of traffic to our website. 
+        </h2>
+      </section>
+      <section>
+        <h1>How does SEO works</h1>
+        <h2>Seo Works in 3 Steps</h2>
+        <h2>
+          Step 1: Google bots crawl all of the sites discovered and filter them
+          based on our search.<br />
+          Step 2: Google bots index all websites based on their SEO performance.
+          Indexing is the process of interacting with a website's metadata,
+          semantics and Img alt tags. In layman's terms, Google bots are trying
+          to understand our website.<br />
+          Step 3: Google bots stores data in a database. After that, Google's
+          bots give scores to every website whose data is stored in a database.
+          Google ranks websites based on their "Click through rate," "bounce
+          rate," and "dwell time." After scoring the website, Google bots assign
+          a rank to it, and this rank is displayed in a list of websites. the
+          better the SEO,The higher the rank ; and the higher the rank, the
+          first in line. No one goes to the second or third page of Google to
+          fulfil their request.
+        </h2>
+        <h2>
+          A Google bot will interpret HTML as it's language and will interact
+          with a website more effectively if the HTML:5  is of high quality.
+        </h2>
+      </section>
+      <section>
+        <h1>What is Pre-rendering</h1>
+        <h2>
+          Basically, pre-rendering is the technique of generating a static HTML
+          page on the server side in advance rather than generating it on the
+          client side with Javascript.
+        </h2>
+      </section>
+      <section>
+        <h1>What does Next have to do with SEO?</h1>
+        <h2>
+          Essentially, Next.js is the React.js framework.<br />
+          Google bots have difficulty interacting with pages in React JS because
+          there is no pre-rendering and all rendering is done on the client side
+          using Javascript. As a result, no DOM is loaded at first, and DOM is
+          loaded after JavaScript is loaded.  <br />
+        </h2>
+        <image src="../public/reactProb.png" class="imageStyle"></image>
+        <h2>Next.js solves this problem by introducing pre-rendering.</h2>
+        <h2>
+          By default, next.js pre-renders every page. Unlike React.js, Next.js
+          will generate HTML for each page in advance rather than generating
+          each page using client-side 
+        </h2>
+        <image src="../public/preRendering.png" class="imageStyle"></image>
+      </section>
+
+      <section>
+        <h1>Advantages of Pre-rendering</h1>
+        <h2>
+          There are numerous benefits to pre-rendering, but the two most
+          important are: 
+        </h2>
+        <ol class="header">
+          <li>
+            <h2>Better performance</h2>
+            <h2>
+              Clients can view static HTML pages faster than react apps because
+              pages are pre-rendered on the server. 
+            </h2>
+          </li>
+          <li>
+            <h2>helps with SEO</h2>
+            <h2>
+              As pages are pre-rendered, Google bots will see our html page
+              rather than a blank page with gibberish html (React app).
+            </h2>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h1>Types of Pre-rendering</h1>
+        <ol class="header">
+          <h2>Pre-rendering techniques are classified into three types: </h2>
+          <li>
+            <h2>Static Site Genration(SSG)</h2>
+            <h2>
+              Static Site generation basically means that all the content and
+              pages are pre-rendered at build time.<br />
+              it is fastest among three
+            </h2>
+            <image
+              src="../public/SSG1.png"
+              class="imageStyle"
+              style="width: 500px; height: 500px"
+            ></image>
+            <h2><a href="./ssg.html">More Info on SSG</a></h2>
+          </li>
+          <li>
+            <h2>Server Side Rendering(SSR)</h2>
+            <h2>
+              Server-side rendering means that we are rendering the data on the
+              server. but at the same time, all HTML is pre-rendering on every
+              request, so when you use SSR in your page, it will generate HTML
+              for that page every time the request is made.
+            </h2>
+            <image
+              src="../public/SSR1.png"
+              class="imageStyle"
+              style="width: 500px; height: 500px"
+            ></image>
+          </li>
+          <li>
+            <h2>Incremental site Regenration(ISR)</h2>
+            <h2>
+              Incremental site Regenration is similar to static generation, but
+              next JS allows you to re-build this page on the server at a fixed
+              interval of time(after depolyment) so that data does not become
+              stale.<br />
+              It has the advantages of both SSG and SSR, and it is slower than
+              SSG but faster than SSR.
+            </h2>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="../JS/Incldeheader.js"></script>
+  </body>
+</html>

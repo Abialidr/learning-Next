@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Routing</title>
+    <link rel="stylesheet" href="../CSS/global.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+    <main>
+      <h1 class="main-title">Routing</h1>
+      <section>
+        <h1>What is routing</h1>
+        <h2>
+          Basically routing means to open a specific file when navigated in url
+          bar in browser.<br />
+          Normally browser offers "History api" to do routing.<br />
+          Next js Also uses HIstory API's internally to do page based routing
+        </h2>
+      </section>
+
+      <section>
+        <h1>various methods Next JS provides for Routing </h1>
+        <ol class="header">
+          <li>index routing</li>
+          <li>nested routing</li>
+          <li>dynamic Routing</li>
+        </ol>
+      </section>
+
+      <section>
+        <h1>Rules for routing</h1>
+        <h2>
+          In the NEXTJs, there are two basic rules for creating routing
+          components.
+        </h2>
+        <ul class="header">
+          <li>The component should be a react component that returns JSX.</li>
+          <li>
+            Instead of basic export, the component should be exported as
+            default.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h1>Index Routing</h1>
+        <h2>
+          Any file that is directly added to the NextJS pages folder is referred
+          to as a as index routes. <br />
+          index routes also point to index.js files as well. <br />
+          They have no names but are directly related to their parent component.
+          <br />
+          for example 1, page/index.js is shown as "localhost:3000/". instead of
+          "localhost:3000/index". <br />
+          for example 2, Page/hello-world/index.js is shown as
+          "localhost:3000/hello-world". instead of
+          "localhost:3000/hello-world/index".
+        </h2>
+      </section>
+
+      <section>
+        <h1>Nested Routing</h1>
+        <h2>
+          A "nested route" is any folder that is created within a pages
+          folder.<br />
+          Inside this folder, index.js is the default route; any other file with
+          a different name is added beside nested-route.<br />
+          for example, "pages/hello-world/index.js" can be accessed by writing
+          "localhost:3000/hello-world" but "pages/hello-world/hello-world.js"
+          can be accessed by writing "localhost:3000/hello-world/hello-world."
+        </h2>
+      </section>
+
+      <section>
+        <h1>Dynamic Routing</h1>
+        <h2>
+          Dynamic routes are pointed toward those routes that have no name but
+          an id<br />
+          This is a route that can be anything. You add a dynamic id beside a
+          route. to access a definite value dynamically without creating the
+          same page for hundreds of times.<br />
+          for example, inside an e-commerce website. <br />
+          On this website, there is a static product detail page that shows
+          hundreds of products dynamically. A dynamic route can now access this
+          entire product by using an ID as a route. 
+          <br /><br />
+          This route can be created by naming the file " [filename].js ".
+          Filname should be enclosed in square brackets. <br />
+          To access the value of this dynamic route, you have to import the
+          useRouter hook from next/router. To access value, you must first
+          create a Router instance by including this statement  👇.  <br />
+          "const router = useRouter()" <br />
+          The value of a dynamic route exists inside router.query.filename.
+        </h2>
+      </section>
+      <section>
+        <h1>Linking Pages</h1>
+        <h2>
+          Linking all pages inside a project is also a very important part of
+          routing.<br />
+          Pages are linked by using the a> tag inside HTML; it can also be used
+          in Next JS, but will ruin the single page application experience
+          offered by Next JS.<br />
+          Next.js provides the Link> tag to preserve this experience.<br />
+          The link tag can connect two types of pages, including a static and
+          dynamic page.<br />
+        </h2>
+      </section>
+      <section>
+        <h1>Steps to link page</h1>
+        <h2>
+          Step 1: Import the Link tag from next/link. <br />
+          Step 2: As shown below, use the link tag.<br />
+          &lt;Link  href="route" &gt;&lt;a&gt;link
+          name&lt;/a&gt;&lt;/Link&gt;<br />
+          There are different props to this component too; please refer to this
+          site to explore more. <br />
+          <a
+            href="https://nextjs.org/docs/api-reference/next/link"
+            target="_blank"
+            >More detail on link tag</a
+          >
+        </h2>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="../JS/Incldeheader.js"></script>
+  </body>
+</html>

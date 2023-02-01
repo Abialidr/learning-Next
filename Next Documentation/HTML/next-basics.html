@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics</title>
+    <link rel="stylesheet" href="../CSS/global.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+    <main>
+      <h1 class="main-title">Basics</h1>
+      <section>
+        <h1>What is Next JS?</h1>
+        <h2>
+          Next.js is similar to the React Framework, but it renders content on
+          the server.
+        </h2>
+      </section>
+      <section>
+        <h1>The Advantages of Next Js</h1>
+        <ol class="header">
+          <li>
+            <h2>Various rendering techniques</h2>
+            <ol class="sub-header">
+              <li><h3>static side generation</h3></li>
+              <li><h3>server-side rendering</h3></li>
+              <li><h3>incremental site regeneration</h3></li>
+            </ol>
+          </li>
+          <li>
+            <h2>Performance</h2>
+            <ol class="sub-header">
+              <li><h3>code splitting </h3></li>
+              <li><h3>manifying files</h3></li>
+              <li><h3>image optimization</h3></li>
+              <li><h3>pre-fetching assets</h3></li>
+            </ol>
+          </li>
+          <li>
+            <h2>Various rendering techniques</h2>
+          </li>
+          <li>
+            <h2>SEO</h2>
+          </li>
+          <li>
+            <h2>Functions that do not require a server</h2>
+          </li>
+          <li>
+            <h2>The big developer community</h2>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h1>When to use Nextjs and Reactjs</h1>
+        <h2>
+          Basically, next.js shoold be chosen most of the time because it is
+          built on React.js, but it is better in so many ways. but you can also
+          select the React app if the application requirements are simple.
+        </h2>
+      </section>
+      <section>
+        <h1>How to create Next App</h1>
+        <h2>
+          use npx <span class="highlight"> create-next-app</span> to create new
+          next app
+        </h2>
+      </section>
+      <section>
+        <h1>what does create-next-app gives us</h1>
+        <ol class="header">
+          <li>
+            <h2>package.json</h2>
+            <h4>
+              this is place where all the dependences of app is placed with
+              other info too
+            </h4>
+          </li>
+          <li>
+            <h2>node modules</h2>
+            <h4>all the dependences are installed here</h4>
+          </li>
+          <li>
+            <h2>pages</h2>
+            <ol class="sub-header">
+              <li>
+                <h3>./Api</h3>
+                <h4>all the node/backend code is written here</h4>
+              </li>
+              <li>
+                <h3>_app.js</h3>
+                <h4>
+                  this is file which is entery point to whole project and
+                  dependences imported or files which are placed here will be
+                  reflected in all the components or pages of project
+                </h4>
+              </li>
+              <li>
+                <h3>_document.js</h3>
+                <h4>
+                  This is the file that maintains the head section of all the
+                  projects, which means any CDN import is reflected in all of
+                  the projects.<br />
+                  The difference between _app.js and _document.js is that
+                  _app.js is the entry point of the project's body side, whereas
+                  _document.js is the entry point of the project's head section.
+                </h4>
+              </li>
+              <li>
+                <h3>index.js</h3>
+                <h4>first page which is loaded</h4>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <h2>styles</h2>
+            <ol class="sub-header">
+              <li>
+                <h3>global.css</h3>
+                <h4>styles written here will be applied to all the elemnts</h4>
+                <h4>
+                  css modules are imported in this way :-
+                  <br />
+                  import styles from "./[location(where the file is located)]"
+                </h4>
+                <h4>
+                  css modules are used in this way :-
+                  <br />
+                  &#60;componentName&#62; className="styles.[className/whatever
+                  name of file is]" &#60;/componentName&#62;
+                </h4>
+              </li>
+              <li>
+                <h3>home.module.css</h3>
+                <h4>
+                  This module's base CSS file is only applied to the module in
+                  which it is imported.
+                </h4>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <h2>public</h2>
+            <h4>
+              all static resources like image, videos, mp3 etc are placed here
+            </h4>
+          </li>
+          <li>
+            <h2>.next</h2>
+            <h4>
+              This is the folder that is built when the project is ready for
+              production. This file is deployed on the server. It can be built
+              using "npm run build."
+            </h4>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h1>What is fast refresh provided in next js</h1>
+        <h2>
+          Fast refresh is way that next js refreshes the output in dev
+          environment.Fast refresh happens when ever you make new change and
+          save it.whenever an error is occured then fast refresh will open a
+          modal showing the exact error and where it has happened in your code
+        </h2>
+      </section>
+      <section>
+        <h1>What is &#60;Head&#62; offered by next js</h1>
+        <h2>
+          &#60;Head&#62; is basically head tag of html it works and act same as
+          html head tag. title tag and link tag meta tags etc are supported in
+          &#60;Head&#62; tag
+        </h2>
+        <h4>
+          &#60;Head&#62; is impored in this way :- <br />
+          import &#60;Head&#62; from 'next/head <br />
+          and used between &#60;Head&#62; &#60;/Head&#62;
+        </h4>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="../JS/Incldeheader.js"></script>
+  </body>
+</html>
