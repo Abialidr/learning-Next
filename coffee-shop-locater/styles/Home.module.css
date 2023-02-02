@@ -110,3 +110,6 @@
   margin-top: 2rem;
   color: var(--text-white-100);
 }
+.sectionWrapper {
+  margin-top: 5rem;
+}
